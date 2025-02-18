@@ -63,7 +63,7 @@ public class PessoaController  {
         Optional<Pessoa> pessoaExistente = pessoaRepository.findById(id);
 
         if (pessoaExistente.isPresent()) {
-            pessoaRepository.deleteById(id);
+            pessoaRepository.deleteById(id); //asfiddifnsinfosd
             return ResponseEntity.noContent().build();
         }
 
